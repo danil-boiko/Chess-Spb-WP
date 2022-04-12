@@ -35,8 +35,72 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 
-	<header class="header">
-		
-	</header>
+<header class="header transparent">
+    <div class="container header__content">
+        <div class="header__content-left">
+            <a href="/" class="header__logo">
+                <svg><use xlink:href="#logo"></use></svg>
+            </a>
+        </div>
+        <div class="header__content-right">
+            <div class="header__content-right-top">
+                <a href="/" class="header__logo">
+                    <svg><use xlink:href="#logo"></use></svg>
+                </a> 
+                <div class="hamburger js-menu-close">
+                    <svg><use xlink:href="#burger"></use></svg>
+                </div>
+            </div>
+            <div class="header__content-right-wrapper">
+                <nav class="header__nav nav">
+                    <ul class="nav__list">
+                        <li><a href="#">Расписание</a></li>
+                        <li><a href="prices.html">Стоимость</a></li>
+                        <li><a href="gallery.html">Галерея</a></li>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="events.html">Турниры</a></li>
+                        <li><a href="corp.html">Партнерам</a></li>
+                    </ul>
+                </nav>
+                <div class="header__content-right_close js-menu-close">
+                    <svg><use xlink:href="#menu-close"></use></svg>
+                </div>
+                <a class="header__content-right_request btn btn-green" href="#">Оставить заявку</a>
+            </div>
+            <div class="header__content-right-bottom">
+                <ul class="socials-list">
+                    <li class="socials-list-item">
+                        <a href="#">
+                             <svg><use xlink:href="#telegram"></use></svg>
+                        </a>
+                    </li>
+                    <li class="socials-list-item">
+                        <a href="#">
+                            <svg><use xlink:href="#whatsapp"></use></svg>
+                        </a>
+                    </li>
+                    <li class="socials-list-item">
+                        <a href="#">
+                            <svg><use xlink:href="#vk"></use></svg>
+                        </a>
+                    </li>
+                    <li class="socials-list-item">
+                        <a href="#">
+                            <svg><use xlink:href="#youtube"></use></svg>
+                        </a>
+                    </li>
+                </ul>
+                <div class="footer-bottom-inner-copy">
+                    <span>Все права защищены</span>
+                    <span>Шахматная школа “Лидер” 2022</span>
+                </div>
+            </div>
+        </div>
 
-	<main>
+        <div class="hamburger js-menu-open">
+            <svg><use xlink:href="#burger"></use></svg>
+        </div>
+    </div>
+</header><!-- / .header -->
+
+<main>
