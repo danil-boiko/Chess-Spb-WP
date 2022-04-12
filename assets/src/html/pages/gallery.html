@@ -1,0 +1,12 @@
+<%=_.template(require('../templates/header.html'))({
+    title: "Галерея | Школа Лидер",
+    body: 'gallery-page',
+    header: ''
+}) %>
+
+<main class="main">
+    <%=_.template(require('../templates/gallery/gallery.html'))() %>
+    <%=_.template(require('../templates/home/form.html'))() %>
+</main>
+
+<%=_.template(require('../templates/footer.html'))() %>

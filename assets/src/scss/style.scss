@@ -1,0 +1,36 @@
+// LIBS
+@import '~aos/dist/aos.css';
+@import '~swiper/swiper-bundle.css';
+@import'~@fancyapps/ui/dist/fancybox.css';
+
+// SPECIFICATION
+@import "spec/fonts";
+@import "spec/variables";
+@import "spec/mixins";
+@import "spec/global";
+@import "spec/visually-hidden";
+
+// COMPONENTS
+@import "components/container";
+@import "components/header";
+@import "components/footer";
+@import "components/buttons";
+@import "components/socials";
+@import "components/textarea";
+
+// HOMEPAGE
+@import "pages/home/intro";
+@import "pages/home/about";
+@import "pages/home/features";
+@import "pages/home/coaches";
+@import "pages/home/reviews";
+@import "pages/home/form";
+
+// EVENTS AND CORP PAGES
+@import "pages/events/events";
+
+// PRICES PAGE
+@import "pages/prices/prices";
+
+// GALLERY PAGE
+@import "pages/gallery/gallery";

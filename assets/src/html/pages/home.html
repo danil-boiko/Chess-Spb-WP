@@ -1,0 +1,16 @@
+<%=_.template(require('../templates/header.html'))({
+    title: "Главная | Школа Лидер",
+    body: 'homepage',
+    header: 'transparent'
+}) %>
+
+<main class="main">
+    <%=_.template(require('../templates/home/intro.html'))() %>
+    <%=_.template(require('../templates/home/about.html'))() %>
+    <%=_.template(require('../templates/home/features.html'))() %>
+    <%=_.template(require('../templates/home/coaches.html'))() %>
+    <%=_.template(require('../templates/home/reviews.html'))() %>
+    <%=_.template(require('../templates/home/form.html'))() %>
+</main>
+
+<%=_.template(require('../templates/footer.html'))() %>

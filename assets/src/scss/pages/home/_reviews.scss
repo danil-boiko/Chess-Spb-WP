@@ -1,0 +1,83 @@
+.home-reviews{
+    margin: 60px 0;
+    @include media-up(md){
+        margin: 100px 0;
+    }
+    @include media-up(lg){
+        margin: 180px 0;
+    }
+    &__title{
+        margin-bottom: 40px;
+        @include media-up(lg){
+            margin-bottom: 80px;
+        }
+    }
+    &__wrapper{
+        padding: 15px;
+        margin: -15px;
+        .swiper-slide{
+            transition: opacity .3s;
+            &.swiper-slide-prev{
+                opacity: 0;
+            }
+        }
+    }
+    &__slide{
+        padding: 24px;
+        border-radius: 15px;
+        box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.25);
+        @include media-up(lg){
+            padding: 36px;
+        }
+        &-top{
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 18px;
+            margin-bottom: 12px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid #C4C4C4;
+            @include media-up(lg){
+                font-size: 18px;
+                line-height: 26px;
+                margin-bottom: 24px;
+                padding-bottom: 24px;
+            }
+        }
+        &-bottom{
+            display: flex;
+            &__image{
+                width: 44px;
+                height: 44px;
+                border-radius: 50%;
+                overflow: hidden;
+                margin-right: 12px;
+                @include media-up(lg){
+                    width: 58px;
+                    height: 58px;  
+                    margin-right: 18px;
+                }
+            }
+            &__info{
+                &-name{
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 24px;
+                    margin-bottom: 2px;
+                    @include media-up(md){
+                        font-size: 24px;
+                        line-height: 32px;
+                        margin-bottom: 4px;
+                    }
+                }
+                &-date{
+                    font-size: 12px;
+                    line-height: 18px;
+                    @include media-up(md){
+                        font-size: 14px;
+                        line-height: 22px;
+                    }
+                }
+            }
+        }
+    }
+}

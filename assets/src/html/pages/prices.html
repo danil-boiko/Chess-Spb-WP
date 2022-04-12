@@ -1,0 +1,12 @@
+<%=_.template(require('../templates/header.html'))({
+    title: "Абонементы | Школа Лидер",
+    body: 'prices-page',
+    header: ''
+}) %>
+
+<main class="main">
+    <%=_.template(require('../templates/prices/prices.html'))() %>
+    <%=_.template(require('../templates/home/form.html'))() %>
+</main>
+
+<%=_.template(require('../templates/footer.html'))() %>

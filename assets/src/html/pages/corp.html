@@ -1,0 +1,12 @@
+<%=_.template(require('../templates/header.html'))({
+    title: "Клиентам | Школа Лидер",
+    body: 'clients',
+    header: ''
+}) %>
+
+<main class="main">
+    <%=_.template(require('../templates/corp/corp.html'))() %>
+    <%=_.template(require('../templates/home/form.html'))() %>
+</main>
+
+<%=_.template(require('../templates/footer.html'))() %>

@@ -1,0 +1,12 @@
+<%=_.template(require('../templates/header.html'))({
+    title: "Мероприятия | Школа Лидер",
+    body: 'events-page',
+    header: ''
+}) %>
+
+<main class="main">
+    <%=_.template(require('../templates/events/events.html'))() %>
+    <%=_.template(require('../templates/home/form.html'))() %>
+</main>
+
+<%=_.template(require('../templates/footer.html'))() %>

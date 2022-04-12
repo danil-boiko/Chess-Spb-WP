@@ -1,0 +1,26 @@
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 100%;
+
+  @include media-up(md) {
+    padding: 0 30px;
+    max-width: 1260px;
+  }
+
+  @include media-up(xxl){
+    max-width: 1460px;
+  }
+
+  &-small{
+
+    @include media-up(md) {
+      max-width: 1200px;
+    }
+
+    @include media-up(xxl){
+      max-width: 1400px;
+    }
+
+  }
+}

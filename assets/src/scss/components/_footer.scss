@@ -1,0 +1,153 @@
+.footer {
+    background: $color-green-dark;
+    &-top{
+        padding: 30px 0;
+        @include media-up(lg){
+            padding: 60px 0;
+        }
+        &-grid{
+            display: grid;
+            @include media-up(lg){
+                grid-template-columns: repeat(4, 1fr);
+                grid-gap: 40px;
+            }
+        }
+        &-item{
+            list-style-type: none;
+            &:last-child{
+                @include media-up(lg){
+                    grid-column: span 2;
+                    max-width: 400px;
+                    margin-left: auto;
+                }
+                .footer-top-item-title{
+                    display: none;
+                }
+            }
+            &-title{
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 24px;
+                color: $color-grey;
+                margin-bottom: 24px;
+                @include media-up(lg){
+                    display: block;
+                }
+                @include media-down(md){
+                    color: $color-main;
+                }
+            }
+            &-content{
+                * {
+                    margin-bottom: 18px;
+                    color: #fff;
+                    display: block;
+                }
+                span,a{
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 25px;
+                    color: #fff;
+                    @include media-up(xxl){
+                        font-size: 24px;
+                        line-height: 32px;  
+                    }
+                    @include media-down(md){
+                        color: $color-main;
+                    }
+                }
+                p {
+                    font-size: 16px;
+                    line-height: 20px;
+                    @include media-up(xxl){
+                        font-size: 18px;
+                        line-height: 24px;
+                    }
+                    @include media-down(md){
+                        color: $color-main;
+                    }
+                }
+            }
+            &-socials.socials-list{
+                justify-content: center;
+                @include media-up(lg){
+                    justify-content: space-between;
+                }
+            }
+        }
+    }
+    &-bottom{
+        padding-bottom: 30px;
+        &-inner{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @include media-up(lg){
+                justify-content: flex-end; 
+            }
+            .nav__list{
+                display: none;
+                @include media-up(lg){
+                    display: flex;
+                }
+                li{
+                    margin-right: 24px;
+                    &:last-child{
+                        margin-right: 0;
+                    }
+                    @include media-up(xl){
+                        margin-right: 40px;
+                    }
+                    @include media-up(xxl){
+                        margin-right: 60px;
+                    }
+                    a{
+                        color: rgba(#fff, .8);
+                        transition: color .3s;
+                        &:hover{
+                            color: rgba(#fff, 1);
+                        }
+                    }
+                }
+            }
+            &-btn.btn{
+                background-color: rgba(#fff, .8);
+                color: $color-green-dark;
+                border: 1px solid transparent;
+                &:hover{
+                    border-color: #fff;
+                    color: #fff;
+                }
+            }
+            &-copy{
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 18px;
+                color: #fff;
+                text-align: center;
+                @include media-up(lg){
+                    display: none;
+                }
+                span{
+                    display: block;
+                }
+                span:not(:last-child){
+                    margin-bottom: 8px;
+                }
+            }
+        }
+    }
+}
+
+.js-footer-item-transfer{
+    @include media-down(md){
+        margin-bottom: 36px;
+        .footer-top-item-title{
+            margin-bottom: 8px;
+        }
+        span, a{
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+    }
+}
