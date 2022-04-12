@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package Apps_Flyer
+ * @package chess_spb
  */
 
 ?>

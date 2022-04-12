@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Creating_an_Error_404_Page
  *
- * @package Apps_Flyer
+ * @package chess_spb
  */
 
 get_header();

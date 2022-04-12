@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package Apps_Flyer
+ * @package chess_spb
  */
 
 ?>
@@ -52,16 +52,14 @@
                 </div>
             </div>
             <div class="header__content-right-wrapper">
-                <nav class="header__nav nav">
-                    <ul class="nav__list">
-                        <li><a href="#">Расписание</a></li>
-                        <li><a href="prices.html">Стоимость</a></li>
-                        <li><a href="gallery.html">Галерея</a></li>
-                        <li><a href="#">Контакты</a></li>
-                        <li><a href="events.html">Турниры</a></li>
-                        <li><a href="corp.html">Партнерам</a></li>
-                    </ul>
-                </nav>
+				<nav class="header__nav nav">
+					<?php  wp_nav_menu( array(
+							'menu_class'     => 'nav__list',
+							'theme_location' => 'header-menu',
+							'container'      => ''
+						) );
+					?>
+				</nav>
                 <div class="header__content-right_close js-menu-close">
                     <svg><use xlink:href="#menu-close"></use></svg>
                 </div>

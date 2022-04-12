@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package Apps_Flyer
+ * @package chess_spb
  */
 
 if ( ! defined( '_S_VERSION' ) ) {
@@ -13,7 +13,7 @@ if ( ! defined( '_S_VERSION' ) ) {
 }
 
 //**==Theme support Settings==**//
-function apps_flyer_setup() {
+function chess_spb_setup() {
 	add_theme_support( 'custom-logo' );
 	add_theme_support( 'automatic-feed-links' );
 	add_theme_support( 'title-tag' );
@@ -32,9 +32,15 @@ function apps_flyer_setup() {
 	);
 }
 
-add_action( 'after_setup_theme', 'apps_flyer_setup' );
+add_action( 'after_setup_theme', 'chess_spb_setup' );
 //**==Theme support Settings==**//
 
+//**==Register Nav-menus==**//
+add_action( 'after_setup_theme', 'chess_spb_register_nav_menu' );
+function chess_spb_register_nav_menu() {
+	register_nav_menu( 'header', 'header-menu' );
+}
+//**==Register Nav-menus==**//
 
 //**==Support of svg type download==**//
 add_filter( 'upload_mimes', 'svg_upload_allow' );
@@ -74,12 +80,12 @@ function fix_svg_mime_type( $data, $file, $filename, $mimes, $real_mime = '' ){
 
 
 //**==Enqueue scripts and styles==**//
-function apps_flyer_scripts() {
+function chess_spb_scripts() {
 
     wp_enqueue_style('styles', get_template_directory_uri() . '/assets/dist/css/style.css', array(), _S_VERSION);
     wp_enqueue_script('scripts', get_template_directory_uri() . '/assets/dist/js/app.bundle.js', array(), _S_VERSION, true);
 	
 }
 
-add_action( 'wp_enqueue_scripts', 'apps_flyer_scripts' );
+add_action( 'wp_enqueue_scripts', 'chess_spb_scripts' );
 //**==Enqueue scripts and styles==**//
