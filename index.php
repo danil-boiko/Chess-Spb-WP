@@ -9,7 +9,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Apps_Flyer
+ * @package chess_spb
  */
 
 get_header();

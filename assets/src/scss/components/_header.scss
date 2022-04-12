@@ -83,8 +83,8 @@
                 @include media-up(lg){
                     flex-direction: row;
                 }
-                .nav{
-                    &__list{
+                .nav__list{
+                    ul{
                         display: flex;
                         flex-direction: column;
                         @include media-up(lg){
