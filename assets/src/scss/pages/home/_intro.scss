@@ -69,6 +69,10 @@
                 line-height: 60px;
             }
             @include media-up(xl){
+                font-size: 56px;
+                line-height: 66px;
+            }
+            @include media-up(xxl){
                 font-size: 60px;
                 line-height: 72px; 
             }
@@ -86,7 +90,10 @@
                 line-height: 36px;
             }
             @include media-up(xl){
-                margin-bottom: 60px;
+                font-size: 32px;
+                line-height: 40px;
+            }
+            @include media-up(xxl){
                 font-size: 36px;
                 line-height: 48px;
             }
