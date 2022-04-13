@@ -38,7 +38,10 @@ add_action( 'after_setup_theme', 'chess_spb_setup' );
 //**==Register Nav-menus==**//
 add_action( 'after_setup_theme', 'chess_spb_register_nav_menu' );
 function chess_spb_register_nav_menu() {
-	register_nav_menu( 'header', 'header-menu' );
+	register_nav_menus( [
+		'header-menu' => 'Меню в шапке',
+		'footer-menu' => 'Меню в подвале'
+	] );
 }
 //**==Register Nav-menus==**//
 

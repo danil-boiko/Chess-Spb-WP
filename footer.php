@@ -61,15 +61,14 @@
         </div>
         <div class="footer-bottom">
             <div class="footer-bottom-inner">
-                <nav class="footer__nav nav">
-                    <ul class="nav__list">
-                        <li><a href="#">Расписание</a></li>
-                        <li><a href="prices.html">Стоимость</a></li>
-                        <li><a href="gallery.html">Галерея</a></li>
-                        <li><a href="#">Контакты</a></li>
-                        <li><a href="events.html">Турниры</a></li>
-                        <li><a href="corp.html">Партнерам</a></li>
-                    </ul>
+                <nav class="footer__nav nav"></nav>
+                    <?php  wp_nav_menu( array(
+							'menu_class'     => 'nav__list',
+                            'menu_id'        => 'footer_menu',
+                            'container'      => '',
+							'theme_location' => 'footer-menu',
+						) );
+					?>
                 </nav>
                 <a class="footer-bottom-inner-btn header__content-right_request btn btn-green" href="#">Оставить заявку</a>
                 <div class="footer-bottom-inner-copy">

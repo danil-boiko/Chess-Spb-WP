@@ -55,8 +55,9 @@
 				<nav class="header__nav nav">
 					<?php  wp_nav_menu( array(
 							'menu_class'     => 'nav__list',
+                            'menu_id'        => 'header_menu',
+                            'container'      => '',
 							'theme_location' => 'header-menu',
-							'container'      => ''
 						) );
 					?>
 				</nav>
