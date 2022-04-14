@@ -81,19 +81,23 @@
                     }
                 }
                 &-skills{
-                    display: grid;
-                    grid-gap: 4px;
-                    @include media-up(md){
-                        grid-gap: 8px;   
-                    }
-                    &-item{
-                        font-weight: 400;
-                        font-size: 12px;
-                        line-height: 18px;
+                    
+                    ul {
+                        display: grid;
+                        grid-gap: 4px;
                         @include media-up(md){
-                            font-weight: 500;
-                            font-size: 17px;
-                            line-height: 26px;
+                            grid-gap: 8px;   
+                        }
+
+                        li {
+                            font-weight: 400;
+                            font-size: 12px;
+                            line-height: 18px;
+                            @include media-up(md){
+                                font-weight: 500;
+                                font-size: 17px;
+                                line-height: 26px;
+                            }
                         }
                     }
                 }
