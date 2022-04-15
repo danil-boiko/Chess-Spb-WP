@@ -11,9 +11,9 @@
             <ul class="home-features__list">
 
                 <?php  
-                $dealay = 0;
+                $delay = 0;
                 foreach($attributes['features'] as $feature):
-                    $dealay = $dealay + 100;
+                    $delay = $delay + 100;
                 ?>
                 <li class="home-features__list-item" data-aos="fade-right" data-aos-delay="<?php echo $delay?>">
                     <h3 class="home-features__list-item_title">
