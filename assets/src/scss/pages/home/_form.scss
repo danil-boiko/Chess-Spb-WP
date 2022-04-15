@@ -69,12 +69,15 @@
                 line-height: 64px;
             }
         }
+        p > span{
+            margin-bottom: 45px;
+            display: block;
+        }
         input{
             background: $color-green-light;
             font-weight: 500;
             font-size: 18px;
             line-height: 24px;
-            margin-bottom: 45px;
             border-bottom: 1px solid #242424;
             padding-left: 0;
             padding-bottom: 5px;

@@ -1,26 +1,17 @@
-.textarea-autosize {
-    display: grid;
+.wpcf7-form-control-wrap.textarea {
     position: relative;
     border-bottom: 1px solid #242424;
-    &::after {
-        content: attr(data-replicated-value) " ";
-        white-space: pre-wrap;
-        visibility: hidden;
-    }
+    margin-bottom: 0;
+
     textarea {
         resize: none;
         overflow: hidden;
-    }
-    &::after,
-    textarea {
-        grid-area: 1 / 1 / 2 / 2;
         padding-left: 0;
         padding-bottom: 5px;
         background: $color-green-light;
         font-weight: 500;
         font-size: 18px;
         line-height: 24px;
-        height: auto;
         @include media-up(lg){
             padding-bottom: 10px;
             font-size: 20px;
