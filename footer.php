@@ -28,7 +28,7 @@
                 <li class="footer-top-item js-footer-item-transfer">
                     <div class="footer-top-item-title">Контакты</div>
                     <div class="footer-top-item-content">
-                        <a href="tel:+78129269330">+7 (812) 926-93-30</a>
+                        <a href="tel:89119269330">8 911 926 93-30</a>
                         <a href="mailto:mail@chess-spb.com">mail@chess-spb.com</a>
                     </div>
                 </li>

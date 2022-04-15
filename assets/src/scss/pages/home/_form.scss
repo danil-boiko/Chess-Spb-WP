@@ -99,13 +99,20 @@
             @include media-up(xxl){
                 margin-top: 60px;
             }
-            &-button{
-                padding: 18px 32px;
+            input.home-form__fields-bottom-button{
+                padding: 18px 32px !important;
                 height: fit-content;
                 min-width: 230px;
+                background-color: #ffffff;
+                border-bottom: none;
+                cursor: pointer;
                 @include media-down(md){
                     font-size: 14px;
                     line-height: 18px;
+                }
+                &:hover{
+                    background-color: $color-green;
+                    color: #ffffff;
                 }
             }
             &-text{

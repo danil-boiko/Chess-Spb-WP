@@ -151,3 +151,15 @@
         }
     }
 }
+
+.footer-top-grid .js-footer-item-transfer{
+    @include media-down(md){
+        display: none;
+    }
+}
+
+.home-form-inner .js-footer-item-transfer{
+    @include media-up(lg){
+        display: none;
+    }
+}
