@@ -1,5 +1,5 @@
 <section class="home-coaches">
-    <div class="container container-small">
+    <div class="container">
 
         <?php if(!empty($attributes['title'])): ?>
             <h2 class="home-coaches__title home-title" data-aos="fade-in">
