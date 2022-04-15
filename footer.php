@@ -13,6 +13,14 @@
 
 </main><!-- #page -->
 
+<!--Contact form in modal-->
+<div id="modal-form">
+    <div class="home-form__fields">
+        <?php echo do_shortcode( '[contact-form-7 id="110" title="Контактная форма перед подвалом"]' )?>
+    </div>
+</div>
+<!--Contact form in modal-->
+
 <footer class="footer">
     <div class="container">
         <div class="footer-top">
@@ -70,7 +78,7 @@
 						) );
 					?>
                 </nav>
-                <a class="footer-bottom-inner-btn header__content-right_request btn btn-green" href="#">Оставить заявку</a>
+                <a class="footer-bottom-inner-btn header__content-right_request btn btn-green" href="#modal-form" data-fancybox>Оставить заявку</a>
                 <div class="footer-bottom-inner-copy">
                     <span>Все права защищены</span>
                     <span>Шахматная школа “Лидер” 2022</span>

@@ -83,6 +83,8 @@ textarea {
   color: $color-main;
   background-color: #fff;
   border: none;
+  outline: none !important;
+  outline-offset: 0;
 
   &:hover,
   &:focus {

@@ -8,7 +8,7 @@
                 <?php echo $attributes['description']?>       
             </p>
             <div class="home-intro__text-link-inner">
-                <a href="<?php echo $attributes['button-url']?>" class="home-intro__text-link btn btn-green"><?php echo $attributes['button-text']?></a>
+                <a href="#modal-form" data-fancybox class="home-intro__text-link btn btn-green"><?php echo $attributes['button-text']?></a>
             </div>
         </div>
     </div>

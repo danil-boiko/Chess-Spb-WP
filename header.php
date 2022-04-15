@@ -64,7 +64,7 @@
                 <div class="header__content-right_close js-menu-close">
                     <svg><use xlink:href="#menu-close"></use></svg>
                 </div>
-                <a class="header__content-right_request btn btn-green" href="#">Оставить заявку</a>
+                <a class="header__content-right_request btn btn-green" href="#modal-form" data-fancybox>Оставить заявку</a>
             </div>
             <div class="header__content-right-bottom">
                 <ul class="socials-list">
