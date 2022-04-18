@@ -11,6 +11,11 @@
             grid-gap: 50px;
             grid-template-columns: 1fr 1fr;
         }
+        @include media-up(xl){
+            padding-top: 63px;
+            grid-gap: 75px 50px;
+            grid-template-columns: 1fr 1fr;
+        }
         @include media-up(xxl){
             grid-gap: 84px;
         }
