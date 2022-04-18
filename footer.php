@@ -28,42 +28,27 @@
                 <li class="footer-top-item js-footer-item-transfer">
                     <div class="footer-top-item-title">Адрес</div>
                     <div class="footer-top-item-content">
-                        <span>Санкт-Петербург</span>
-                        <span>Смоленская улица, дом 18</span>
-                        <p>ЖК "Небо Москвы", вход через ворота с домофоном со стороны Смоленской улицы. Для звонка наберите 3#185</p>
+                    <?php
+                        if ( function_exists('dynamic_sidebar') )
+                            dynamic_sidebar('footer-sidebar-1');
+                    ?>
                     </div>
                 </li>
                 <li class="footer-top-item js-footer-item-transfer">
                     <div class="footer-top-item-title">Контакты</div>
                     <div class="footer-top-item-content">
-                        <a href="tel:89119269330">8 911 926 93-30</a>
-                        <a href="mailto:mail@chess-spb.com">mail@chess-spb.com</a>
+                    <?php
+                        if ( function_exists('dynamic_sidebar') )
+                            dynamic_sidebar('footer-sidebar-2');
+                    ?>
                     </div>
                 </li>
                 <li class="footer-top-item">
                     <div class="footer-top-item-title">Социальные сети</div>
-                    <ul class="footer-top-item-socials socials-list">
-                        <li class="footer-top-item-socials-item socials-list-item">
-                            <a href="#">
-                                 <svg><use xlink:href="#telegram"></use></svg>
-                            </a>
-                        </li>
-                        <li class="footer-top-item-socials-item socials-list-item">
-                            <a href="#">
-                                <svg><use xlink:href="#whatsapp"></use></svg>
-                            </a>
-                        </li>
-                        <li class="footer-top-item-socials-item socials-list-item">
-                            <a href="#">
-                                <svg><use xlink:href="#vk"></use></svg>
-                            </a>
-                        </li>
-                        <li class="footer-top-item-socials-item socials-list-item">
-                            <a href="#">
-                                <svg><use xlink:href="#youtube"></use></svg>
-                            </a>
-                        </li>
-                    </ul>
+                    <?php
+                        if ( function_exists('dynamic_sidebar') )
+                            dynamic_sidebar('footer-sidebar-3');
+                    ?> 
                 </li>
             </ul>
         </div>

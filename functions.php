@@ -92,3 +92,44 @@ function chess_spb_scripts() {
 
 add_action( 'wp_enqueue_scripts', 'chess_spb_scripts' );
 //**==Enqueue scripts and styles==**//
+
+
+//**==Footer Sidebars==**//
+
+add_action( 'widgets_init', 'chess_spb_widgets' );
+
+function chess_spb_widgets(){
+
+	register_sidebar( array(
+		'name'          => 'Адрес',
+		'id'            => 'footer-sidebar-1',
+		'description'   => '',
+		'class'         => '',
+		'before_widget' => '<div id="%1$s" class="footer-top-item js-footer-item-transfer %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="widgettitle">',
+		'after_title'   => '</h2>',
+	) );
+
+	register_sidebar( array(
+		'name'          => 'Контакты',
+		'id'            => 'footer-sidebar-2',
+		'description'   => '',
+		'class'         => '',
+		'before_widget' => '<div id="%1$s" class="footer-top-item js-footer-item-transfer %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="widgettitle">',
+		'after_title'   => '</h2>',
+	) );
+
+	register_sidebar( array(
+		'name'          => 'Социальные сети',
+		'id'            => 'footer-sidebar-3',
+		'description'   => '',
+		'class'         => '',
+		'before_widget' => '<ul id="%1$s" class="footer-top-item-socials socials-list %2$s">',
+		'after_widget'  => '</ul>',
+		'before_title'  => '<h2 class="widgettitle">',
+		'after_title'   => '</h2>',
+	) );
+}
