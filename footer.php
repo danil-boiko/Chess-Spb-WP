@@ -16,7 +16,7 @@
 <!--Contact form in modal-->
 <div id="modal-form">
     <div class="home-form__fields">
-        <?php echo do_shortcode( '[contact-form-7 id="110" title="Контактная форма перед подвалом"]' )?>
+        <?php echo do_shortcode( '[contact-form-7 id="110" title="Основная контактная форма"]' )?>
     </div>
 </div>
 <!--Contact form in modal-->
