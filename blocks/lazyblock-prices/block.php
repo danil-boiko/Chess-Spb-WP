@@ -7,8 +7,9 @@
 
             <?php foreach( $attributes['cards'] as $card ):?>
             <div 
-            class="prices-grid__item <?php if($card['sale'] == true) echo 'prices-grid__item--sale'?>"
-            >
+                class="prices-grid__item 
+                <?php if($card['sale'] == true) echo 'prices-grid__item--sale'?>"
+                >
                 <div class="prices-grid__item-top">
                     <div class="prices-grid__item-top_title">
                         <?php echo $card['name']?>
