@@ -1,0 +1,36 @@
+.shedule-title{
+    p{
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 24px;
+        color: $color-green-dark;
+        text-align: center;
+    }
+}
+.wp-block-timetable{
+    margin: 24px 20px 30px;
+    @include media-up(md){
+        margin: 24px 20px 90px;
+    }
+    @include media-up(xl){
+        margin: 24px 20px 180px;  
+    }
+    .mptt-menu.mptt-navigation-select{
+        width: auto;
+        background-color: #f0f0f0;
+        padding: 0 10px;
+    }
+
+    .event-subtitle{
+        font-weight: 600;
+    }
+
+    
+    .event-description{
+        font-weight: 500;
+    }
+
+    tbody .mptt-event-container{
+        justify-content: center;
+    }
+}
