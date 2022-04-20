@@ -8,13 +8,23 @@
     }
 }
 .wp-block-timetable{
-    margin: 24px 20px 30px;
+    max-width: 1260px;
+    padding: 0 15px;
+    margin: 24px auto 30px;
     @include media-up(md){
-        margin: 24px 20px 90px;
+        margin: 24px auto 90px;
+        padding: 0 30px;
     }
     @include media-up(xl){
-        margin: 24px 20px 180px;  
+        margin: 24px auto 180px;  
     }
+
+    .mptt-shortcode-wrapper{
+        @include media-up(md){
+            overflow-x: auto;
+        }
+    }
+
     .mptt-menu.mptt-navigation-select{
         width: auto;
         background-color: #f0f0f0;
@@ -23,6 +33,9 @@
 
     .event-subtitle{
         font-weight: 600;
+        @include media-between(md,lg){
+            font-size: .7em !important;
+        }
     }
 
     
@@ -32,5 +45,8 @@
 
     tbody .mptt-event-container{
         justify-content: center;
+        &:hover{
+            z-index: initial !important;
+        }
     }
 }
