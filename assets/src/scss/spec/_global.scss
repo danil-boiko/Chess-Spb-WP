@@ -32,7 +32,10 @@ main {
   overflow: hidden;
   padding-top: 80px;
   @include media-up(lg){
-    padding-top: 200px;
+    padding-top: 120px;
+  }
+  @include media-up(xxl){
+    padding-top: 180px;
   }
 }
 
