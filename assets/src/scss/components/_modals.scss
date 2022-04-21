@@ -3,5 +3,6 @@
     display: none;
     @include media-up(md){
         max-width: 686px;
+        width: 100%;
     }
 }
