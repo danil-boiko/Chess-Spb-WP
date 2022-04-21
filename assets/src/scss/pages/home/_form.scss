@@ -79,8 +79,11 @@
             font-size: 18px;
             line-height: 24px;
             border-bottom: 1px solid #242424;
+            border-left: none;
+            border-right: none;
+            border-radius: 0px;
             padding-left: 0;
-            padding-bottom: 5px;
+            padding-bottom: 10px;
             height: auto;
             @include media-up(lg){
                 font-size: 20px;
@@ -106,6 +109,7 @@
                 background-color: #ffffff;
                 border-bottom: none;
                 cursor: pointer;
+                height: 54px;
                 @include media-down(md){
                     font-size: 14px;
                     line-height: 18px;
