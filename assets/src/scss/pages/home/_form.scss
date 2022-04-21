@@ -110,6 +110,10 @@
                 border-bottom: none;
                 cursor: pointer;
                 height: 54px;
+                border-radius: 5px;
+                @include media-up(lg){
+                    height: 62px;
+                }
                 @include media-down(md){
                     font-size: 14px;
                     line-height: 18px;
