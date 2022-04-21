@@ -9,7 +9,7 @@
 
             <?php foreach( $attributes['images'] as $image ): ?>
                 <a href="<?php echo $image['url']?>" data-fancybox="gallery" class="gallery-grid-item">
-                    <img src="<?php echo $image['url']?>" alt="<?php echo $image['alt']?>">
+                    <img class="gallery-grid-item-image" src="<?php echo $image['url']?>" alt="<?php echo $image['alt']?>">
                 </a>
             <?php endforeach; ?>
 
