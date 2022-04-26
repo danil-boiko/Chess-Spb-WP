@@ -11,8 +11,13 @@ get_header();
 ?>
 
 		<section class="error-404 not-found">
-			
-			<h1>Sorry but this page in not found</h1>
+
+			<div class="container">
+				<div class="not-found-inner">
+					<h1 class="not-found-title">Страница не найдена</h1>
+					<a class="not-found-link btn btn-green" href="/">Вернуться на главную</a>
+				</div>
+			</div>
 			
 		</section><!-- .error-404 -->
 
