@@ -1,5 +1,5 @@
 <?php
-/* Template Name: Страница расписания */
+/* Template Name: Страница Расписания */
 get_header();
 ?>
 <div class="container shedule-title">
