@@ -39,7 +39,7 @@ get_header();
                 <ul class="blog__categories-list categories-list">
                 <?php 
                     foreach( $categories as $category ): 
-                    $image = get_field('image', $category->term_id);
+                    $image = get_field('image', $category);
                     ?>
 
                     <li class="<?php echo $category->term_id ?> categories-list__item">
