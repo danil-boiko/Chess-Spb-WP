@@ -1,9 +1,6 @@
 {
-    "name": "Web Development Company One-Pix",
-    "short_name": "One-Pix",
-    "description": "OnePix – Web Development Company in Saint–Petersburg",
-    "lang": "ru",
-    "dir": "ltr",
+    "name": "",
+    "short_name": "",
     "icons": [
         {
             "src": "android-chrome-192x192.png",
@@ -11,8 +8,8 @@
             "type": "image/png"
         },
         {
-            "src": "android-chrome-512x512.png",
-            "sizes": "512x512",
+            "src": "android-chrome-256x256.png",
+            "sizes": "256x256",
             "type": "image/png"
         }
     ],
