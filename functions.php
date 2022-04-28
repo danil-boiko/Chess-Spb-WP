@@ -133,3 +133,29 @@ function chess_spb_widgets(){
 		'after_title'   => '</h2>',
 	) );
 }
+
+//**==Footer Sidebars==**//
+
+//**==Reading Time==**//
+
+function reading_time($post_id) {
+	$content = get_post_field( 'post_content', $post_id );
+	$word_count = sizeof(explode(" ", $content));
+	$readingtime = ceil($word_count / 200);
+
+	if ($readingtime == 1) {
+	  $timer = " минута";
+	} elseif ($readingtime == 2 || $readingtime == 3 || $readingtime == 4) {
+	  $timer = " минуты";
+	} elseif ($readingtime == 0 ){
+		return 'меньше минуты';
+	} else {
+	  $timer = " минут";
+	}
+
+	$totalreadingtime = '~' . $readingtime . $timer;
+	return $totalreadingtime;
+
+}
+
+//**==Reading Time==**//

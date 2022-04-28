@@ -69,7 +69,7 @@ get_header();
                                     <?php endforeach; ?>
                                 </ul>
                                 <div class="blog__posts-grid-item_info-time">
-
+                                    <?php echo reading_time(get_the_ID()); ?>
                                 </div>
                             </div>
                             <div class="blog__posts-grid-item_title">
