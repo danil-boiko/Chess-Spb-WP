@@ -7,9 +7,6 @@ export default function(){
     //Home reviews slider
 
     reviewsSlider && new Swiper(reviewsSlider, {
-        autoplay: {
-            delay: 3500,
-          },
         breakpoints: {
             320:{
                 slidesPerView: 1,
